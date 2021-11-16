@@ -14,8 +14,6 @@
 #include <cmath>         // needed for math functions like sqrt()
 using namespace std;
 
-
-
 int main()
 
 {
