@@ -5,5 +5,5 @@
 -I/usr/local/include
 -I/usr/include/x86_64-linux-gnu
 -I/usr/include
--I/home/bal3x/clases/compe_1/programa1/compe_lab_ex2
+-I/home/bal3x/clases/compe_1/programas/compe_lab_ex2
 -std=c++17

@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=compe_lab_ex3
 ConfigurationName      :=Debug
-WorkspacePath          :=/home/bal3x/clases/compe_1/programa1
-ProjectPath            :=/home/bal3x/clases/compe_1/programa1/compe_lab_ex3
+WorkspacePath          :=/home/bal3x/clases/compe_1/programas
+ProjectPath            :=/home/bal3x/clases/compe_1/programas/compe_lab_ex3
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -93,7 +93,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/main.cpp$(ObjectSuffix): main.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/main.cpp$(DependSuffix) -MM main.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/compe_1/programa1/compe_lab_ex3/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "/home/bal3x/clases/compe_1/programas/compe_lab_ex3/main.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.cpp$(PreprocessSuffix): main.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.cpp$(PreprocessSuffix) main.cpp
 

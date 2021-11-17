@@ -5,5 +5,5 @@
 -I/usr/local/include
 -I/usr/include/x86_64-linux-gnu
 -I/usr/include
--I/home/bal3x/clases/compe_1/programa1/programa1
+-I/home/bal3x/clases/compe_1/programas/programa1
 -std=c++17
