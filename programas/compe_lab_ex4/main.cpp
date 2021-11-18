@@ -19,14 +19,18 @@ using namespace std;
 const int AT_BAT = 421;		// Do not modify
 const int HITS = 123;		// Do not modify
 
+float AT_BAT1, HITS1;
+
 int main()
 {
+    AT_BAT1 = (float) AT_BAT;    // Using typecasting to convert int variables to float
+    HITS1 = (float) HITS; 
     
-    float AT_BAT1 = AT_BAT, HITS1 = HITS;
+    
 	float batAvg;
 
 	batAvg = HITS1 / AT_BAT1;						    	//an assignment statement
-	cout << "Batting average is: " << batAvg << endl;   //output the result
+	cout << "Batting average is: " << batAvg << endl;       //output the result
 	
 	return 0;
 }

@@ -12,11 +12,14 @@
 
 #include <iostream>
 #include <cmath>         // needed for math functions like sqrt()
+#include <iomanip>
+
 using namespace std;
 
 int main()
 
 {
+	cout << setprecision(2) << fixed << showpoint;
 
 	float a,b;		   // the smaller two sides of the triangle
 	float hyp;		   // the hypotenuse calculated by the program
