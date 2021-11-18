@@ -12,6 +12,7 @@
 // Bryan Chavez 
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 
@@ -20,9 +21,11 @@ const int HITS = 123;		// Do not modify
 
 int main()
 {
-	int batAvg;
+    
+    float AT_BAT1 = AT_BAT, HITS1 = HITS;
+	float batAvg;
 
-	batAvg = HITS / AT_BAT;						    	//an assignment statement
+	batAvg = HITS1 / AT_BAT1;						    	//an assignment statement
 	cout << "Batting average is: " << batAvg << endl;   //output the result
 	
 	return 0;
