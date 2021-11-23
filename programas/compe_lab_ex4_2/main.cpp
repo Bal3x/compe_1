@@ -64,24 +64,20 @@ int main()
 
     if (average < 0)
         cout << "Invalid Data" << endl;
-
     else if (average == 0)
         cout << "You Fail" << endl;
-    else if (average > 100)
-        cout << "Invalid Data"  << endl; 
     else if (average <= 69)
         cout << "You Fail" << endl;
     else if (average <= 79)
-        cout << "You Pass" << endl; 
+        cout << "Congratulations you got a C. " << "You Pass!" << endl;
     else if (average <= 89)
-        cout << "You Pass" << endl;
+        cout << "Congratulations you got a B. " << "You Pass!" << endl;
     else if (average <= 99)
-        cout << "You Pass" << endl; 
+        cout << "Congratulations you got an A. " << "You Pass!" << endl; 
     else if (average == 100)
-        cout << "You Pass" << endl; 
-              
-	else
-		cout << "You Fail" << endl;
+        cout << "Congratulations you got an A. " << "You Pass!" << endl;   
+    else
+        cout << "Invalid Data" << endl;    
 
     return 0;	
 }
