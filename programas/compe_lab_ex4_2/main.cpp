@@ -66,10 +66,10 @@ int main()
         cout << "Invalid Data" << endl;
     else if (average == 0)
         cout << "You Fail" << endl;
-    else if (average <= 69)
+    else if (average <= 59)
         cout << "You Fail" << endl;
-    else if (average <= 79)
-        cout << "Congratulations you got a C. " << "You Pass!" << endl;
+    else if (average <= 60)
+        cout << "You Pass!" << endl;
     else if (average <= 89)
         cout << "Congratulations you got a B. " << "You Pass!" << endl;
     else if (average <= 99)
