@@ -16,22 +16,18 @@ using namespace std;
 
 
 
-int main(){         // caso base sin usar funciones. Para usar como referencia.
+int main(){         // caso usando la funcion de fabProgram exited
+s de la libreria matematica de c++
     
     double n, va;
     
     cout << "Entre un numero: ";
     cin >> n;
     
-        if (n < 0.0){
-            va = -n;
-        }
-        else {
-            va = n;
-        }
+    va = fabs(n);
     
-    cout << '|' << n << "| = " << va << "\n\n";
-    
+    cout << '|' << n << "| = " << va << "\n\n"
+
     return 0;
     
 }

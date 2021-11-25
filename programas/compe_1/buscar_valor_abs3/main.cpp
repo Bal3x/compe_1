@@ -11,30 +11,39 @@
  * */
 
 #include <iostream>
-#include <cmath>
 using namespace std;
 
+double myfabs();
 
 
-int main(){         // caso base sin usar funciones. Para usar como referencia.
+int main(){         // caso creando mi propia funcion fabs (myfabs)
     
     double n, va;
     
     cout << "Entre un numero: ";
     cin >> n;
     
-        if (n < 0.0){
-            va = -n;
-        }
-        else {
-            va = n;
-        }
+    va = myfabs(n);
     
-    cout << '|' << n << "| = " << va << "\n\n";
-    
+    cout << '|' << n << "| = " << va << "\n\n"
+
     return 0;
     
 }
 
     
-
+    {
+        double va; 
+        
+            if ( n < 0.0){
+                va = -n;
+            }
+            
+            else{
+                va = n;
+            }
+        
+        return va;
+        
+        
+        }
