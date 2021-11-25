@@ -1,2 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CodeLite_Workspace Name="compe_1" Database="" Version="10000"/>
+<CodeLite_Workspace Name="compe_1" Database="" Version="10000">
+  <Project Name="raiz_cuadrada" Path="raiz_cuadrada/raiz_cuadrada.project" Active="No"/>
+  <Project Name="buscar_valor_abs" Path="buscar_valor_abs/buscar_valor_abs.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="raiz_cuadrada" ConfigName="Debug"/>
+      <Project Name="buscar_valor_abs" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="raiz_cuadrada" ConfigName="Release"/>
+      <Project Name="buscar_valor_abs" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
