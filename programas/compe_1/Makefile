@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ buscar_valor_abs3 - Debug ]----------"
-	@cd "buscar_valor_abs3" && "$(MAKE)" -f  "buscar_valor_abs3.mk"
+	@echo "----------Building project:[ compe_lab5 - Debug ]----------"
+	@cd "compe_lab5" && "$(MAKE)" -f  "compe_lab5.mk"
 clean:
-	@echo "----------Cleaning project:[ buscar_valor_abs3 - Debug ]----------"
-	@cd "buscar_valor_abs3" && "$(MAKE)" -f  "buscar_valor_abs3.mk" clean
+	@echo "----------Cleaning project:[ compe_lab5 - Debug ]----------"
+	@cd "compe_lab5" && "$(MAKE)" -f  "compe_lab5.mk" clean

@@ -27,25 +27,28 @@ int main()
 	// n and m are values entered by the user
   	cout << "Please enter a positive integer: ";
    	cin >> n;
-	cout << "Please enter a second positive integer: ";
+	cout << "Please enter a second positive integer greater than the previous one: ";
    	cin >> m;
 	
 	//then value is the difference between m and n.
-	value = (m-n);
+	value = (m - n);
 
   	if (value > 0)
   	{
-      	for (int i = n; i <= m; i++){
+      	for (int i = n ; i <= m; i++){
  	  	    total = total + i;
 		}  // curly braces are optional since there is only one statement
 
-        mean = float(total) / value;         // note the use of the typecast
+        mean = float(total) / (value + 1);         // note the use of the typecast
 
-		cout << "The mean average of the first " << value
-             << " positive integers is " << mean << endl;
+		cout << "The mean average from " << n << " to " << m << " is " << mean << endl;
     }
     else
         cout << "Invalid input - integers must be positive" << endl;
 
    return 0;
 }
+
+
+    
+
