@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="compe_1" Database="" Version="10000">
   <Project Name="raiz_cuadrada" Path="raiz_cuadrada/raiz_cuadrada.project" Active="No"/>
-  <Project Name="buscar_valor_abs" Path="buscar_valor_abs/buscar_valor_abs.project" Active="Yes"/>
-  <Project Name="buscar_valor_abs2" Path="buscar_valor_abs2/buscar_valor_abs2.project"/>
-  <Project Name="buscar_valor_abs3" Path="buscar_valor_abs3/buscar_valor_abs3.project"/>
+  <Project Name="buscar_valor_abs" Path="buscar_valor_abs/buscar_valor_abs.project" Active="No"/>
+  <Project Name="buscar_valor_abs2" Path="buscar_valor_abs2/buscar_valor_abs2.project" Active="No"/>
+  <Project Name="buscar_valor_abs3" Path="buscar_valor_abs3/buscar_valor_abs3.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
