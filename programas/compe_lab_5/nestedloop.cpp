@@ -26,12 +26,12 @@ int main()
     {
         total = 0;
         for(day = 1; day <= numDays; day++)
-    {
-        cout << "Please enter the number of hours worked by student "
-        << student <<" on day " << day << "." << endl;
-        cin >> numHours;
-        total = total + numHours;
-    }
+        {
+            cout << "Please enter the number of hours worked by student "
+            << student <<" on day " << day << "." << endl;
+            cin >> numHours;
+            total = total + numHours;
+        }
      average = total / 3;
      cout << endl;
      cout << "The average number of hours per day spent programming by "
