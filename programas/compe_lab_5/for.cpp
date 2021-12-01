@@ -11,31 +11,25 @@
 // Please enter a positive integer 'm': 9
 // The mean average from 3 to 9 is 6
 
-// Bryan Chavez
+// PLACE YOUR NAME HERE
 
 #include <iostream>
 using namespace std;
 
-// Modify the code so that it computes the mean of the consecutive
-// positive integers n, n+1, n+2, . . . , m, where the user chooses n and m.
+
 int main()
 {
-	int value, n, m;       // value is some positive number n
+	int value;       // value is some positive number n
  	int total = 0;   // total holds the sum of the first n positive numbers
   	float mean;      // the average of the first n positive numbers
 
-	// n and m are values entered by the user
   	cout << "Please enter a positive integer: ";
-   	cin >> n;
-	cout << "Please enter a second positive integer: ";
-   	cin >> m;
-	
-	//then value is the difference between m and n.
-	value = (m-n);
+   	cin >> value;
 
   	if (value > 0)
   	{
-      	for (int i = n; i <= m; i++){
+      	for (int i = 1; i <= value; i++)
+        {
  	  	    total = total + i;
 		}  // curly braces are optional since there is only one statement
 
@@ -45,7 +39,7 @@ int main()
              << " positive integers is " << mean << endl;
     }
     else
-        cout << "Invalid input - integers must be positive" << endl;
+        cout << "Invalid input - integer must be positive" << endl;
 
    return 0;
 }

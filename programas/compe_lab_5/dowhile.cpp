@@ -98,7 +98,7 @@ int main()
 			validBeverage = false;
 		}
 
-		if (validBeverage == true)
+		if (validBeverage)
 		{
 			cout << "How many cups would you like?" << endl;
 			// Fill in the code to read in number
