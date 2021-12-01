@@ -11,7 +11,7 @@ double radioCirculo();
 
 int main(){
 
-    radioCirculo();
+    cout << "El radio del circulo es : " << radioCirculo() << endl;
 
     return 0;
 }
