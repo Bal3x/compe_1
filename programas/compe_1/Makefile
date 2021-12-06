@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ compe_lab5 - Debug ]----------"
-	@cd "compe_lab5" && "$(MAKE)" -f  "compe_lab5.mk"
+	@echo "----------Building project:[ radioCirculo - Debug ]----------"
+	@cd "radioCirculo" && "$(MAKE)" -f  "radioCirculo.mk"
 clean:
-	@echo "----------Cleaning project:[ compe_lab5 - Debug ]----------"
-	@cd "compe_lab5" && "$(MAKE)" -f  "compe_lab5.mk" clean
+	@echo "----------Cleaning project:[ radioCirculo - Debug ]----------"
+	@cd "radioCirculo" && "$(MAKE)" -f  "radioCirculo.mk" clean

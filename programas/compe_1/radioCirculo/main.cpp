@@ -7,19 +7,19 @@ Creado por : Bryan Chavez
 #include <iostream>
 using namespace std;
 double radioCirculo();
-double radio;
+
 
 
 int main(){
-    radio = radioCirculo();
-    cout << "El radio del circulo es : " << radio << endl;
+
+    cout << "El radio del circulo es : " << radioCirculo() << endl;
 
     return 0;
 }
 
 double radioCirculo(){
 
-    // definir variables locales
+    // definir variables 
     double r;       
     
     //pedir el radio del circulo
@@ -30,5 +30,7 @@ double radioCirculo(){
         cout << "Radio invalido. Intente de nuevo con un numero positivo." << endl;
         cin >> r;
     }
+
     return r;
 }
+
