@@ -5,7 +5,6 @@
  Bryan Chavez
 */
 
-
 #include <iostream>
 #include <cmath>
 
