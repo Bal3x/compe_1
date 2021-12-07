@@ -6,16 +6,17 @@ Creado por : Bryan Chavez
 
 #include <iostream>
 using namespace std;
-double radioCirculo();
+double radioCirculo();      // prototipo
 
 
 int main(){
 
-    cout << "El radio del circulo es : " << radioCirculo() << endl;
+    cout << "El radio del circulo es : " << radioCirculo() << endl;     //llamado
 
     return 0;
 }
 
+// funcion
 double radioCirculo(){
 
     // definir variables locales

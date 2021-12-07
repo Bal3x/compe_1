@@ -1,6 +1,7 @@
 /*
 Programa para calcular el area de un triangulo
-usando una funcion que no sea main\
+usando una funcion que no sea main
+
 Creado por : Bryan Chavez
 */
 
@@ -42,5 +43,5 @@ int main(){
 double calcAreaT(double b, double h){
     
     return 1.0/2.0 * b * h; // retorna el calculo de la funcion. en vez de crear el 
-                            //programa completo se puede hacer un return directo.
+                            
 }
