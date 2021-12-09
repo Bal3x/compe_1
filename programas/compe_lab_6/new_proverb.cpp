@@ -36,12 +36,12 @@ int main ()
 	cout << "Input a 2 to finish with the word country." << endl;
 	cout << "Please input your choice now: ";
 	cin  >> wordCode;
+// validation 
    while (wordCode != 1 && wordCode != 2 ){
       cout << "Please try again, enter 1 or 2." << endl;
       cin >> wordCode;
    }
-	cout << endl;
-   
+// calling the function
    writeProverb(wordCode);
 
 	return 0;

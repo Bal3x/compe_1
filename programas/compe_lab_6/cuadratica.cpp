@@ -17,6 +17,13 @@ int main(){
 // ask user to input a, b and c
     cout << "Please enter the value a of a." << endl;
     cin >> a;
+    
+// validate that a != 0
+    while (a <= 0){
+        cout << "Invalid value for a please enter a positive number." << endl;
+        cin >> a;
+        
+    }
     cout << "Please enter the value a of b." << endl;
     cin >> b;
     cout << "Please enter the value a of c." << endl;
@@ -24,24 +31,14 @@ int main(){
 //calling cuadratica function
     cuadratica(a, b, c); 
 
+
     return 0;
 }
 
 void cuadratica (double a, double b, double c){
 // variables
     double real, img, X1, X2;
-    int counter;
 
-// validate that a != 0
-    counter = 0;
-    while (a == 0){
-        cout << "Invalid value for a please enter a positive number." << endl;
-        cin >> a;
-        counter++;
-        if (counter == 3){
-            exit(0);
-        }
-    }
 // calculate the quadratic function
     if ((pow(b,2) - 4 * a * c) < 0.0){  
         

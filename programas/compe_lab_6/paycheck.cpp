@@ -45,7 +45,7 @@ int main()
 	cin >> hours;
 	cout << endl << endl;
 
-	computePaycheck(payRate,hours,grossPay);
+	computePaycheck(payRate,hours,grossPay);	// call to function
 
 	cout << "The gross pay is $ " << grossPay << endl;//  Fill in the code to output grosspay
 
@@ -85,7 +85,7 @@ void printDescription() //The function heading
 void computePaycheck(float payRate, int hours, float& grossPay)
 {
 
-    grossPay = (hours * hours);
+    grossPay = (payRate * hours);
 
     
     //  Fill in the code to calculate grosspay
