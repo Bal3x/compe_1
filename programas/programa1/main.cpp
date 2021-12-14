@@ -47,5 +47,9 @@ int main(){
     
 }
 
-    
 
+
+void pideDatosR(double& l, double& an){
+
+
+}
