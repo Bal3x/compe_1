@@ -22,17 +22,6 @@ int main(){
         cin >> n;
     } 
 //codigo que solicita al usuario las notas de los 4 examenes
-    for (i = 0; i < n; i++){
-// codigo que pida al usuario la nota del primer examen
-        cout << "Entre la nota del primer examen para el estudiante " << i + 1 << " : " << endl;
-        cin >> ex1[i];
-        while(ex1[i] < 0.0 || ex1[i] > 100.0){
-            cout << "Valor invalido, por favor entre un valor entre 0 - 100." << endl;
-            cin >> ex1[i];
-        }
-//codigo que pida al usuario la nota del segundo examen
     
-    }
     return 0;
-
 }
