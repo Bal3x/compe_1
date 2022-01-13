@@ -46,11 +46,7 @@ int main ()
 	// Fill the code to ask the user to enters values for array2 
     // hint: 'for loop' similar to array1
     for(i = 0; i < MAX_ARRAY; i++){
-<<<<<<< HEAD
-        cout << "PLease input element " << i << " for array2: ";
-=======
         cout << "Please input element " << i << " for array2: ";
->>>>>>> b2e69c5dbc0dcfaddd98a897c564d81c4e1f853a
         cin >> array2[i];
     }    
     // Fill the code to store the sum of array1 and array2 into array3 

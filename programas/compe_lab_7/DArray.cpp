@@ -27,11 +27,12 @@
 using namespace std;
 
 // You have to use these variables in the code.
-const int ROWS = 3;
-const int COLS = 3;
+
 
 int main ()
 {
+	const int ROWS = 3;
+	const int COLS = 3;
 	int table[ROWS][COLS];
 	int sum, i, j, value;
 
@@ -43,27 +44,29 @@ int main ()
 	for(i = 0; i < ROWS; i++)			// Iterate through the rows
 	{
 		sum = 0;		
-		for(j = 0; j < COLS; j++)		// Iterate through the columns.
+		for(j = 0; j < COLS - 1; j++)		// Iterate through the columns.
 		{
 			cout << "Input the value for element (" << i << "," << j << "): ";
 			cin >> value;
-			table[ROWS][COLS] = table[i][j];	// Store value entered into the table
-			sum += table[ROWS][COLS];				// Temporary sum of values entered					
+			table[i][j] = value;		// Store value entered into the table
+			sum += value;				// Temporary sum of values entered					
 		}
-		table[ROWS][COLS] = table[i][j];		// Store sum into the third column
+		table[i][COLS] = sum;			// Store sum into the third column
 	}
 
     // Fill the code to print out the table.
     // Hint: Use a nested-loop similar to the previous part. Instead of 
     // storing values into the table, now you have to display the values
     // that are already stored in the table.
-    for (i = 0; i < ROWS; i++){
-        for (j = 0; j < COLS; j++){
-            cout << table[ROWS][COLS] << table[i][j] << endl;
-        }
-    }
+
+	for(i = 0; i < ROWS; i++){
+		for(j = 0; j < COLS; j++){
+			cout << table[i][j] << '\t';
+		}
+		cout << endl;
+	
+	}
 
    return 0;
 }                                                
 
-// need to debug
