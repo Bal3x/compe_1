@@ -32,8 +32,8 @@ int main ()
 {	
     const int MAX_ARRAY = 3;		// Size of arrays
 
-	int  array1[MAX_ARRAY] = {1, 2, 3};      	// Array 1
-	int  array2[MAX_ARRAY] = {4, 5, 6};      	// Array 2
+	int  array1[MAX_ARRAY];      	// Array 1
+	int  array2[MAX_ARRAY];      	// Array 2
 	int  array3[MAX_ARRAY];      	// Array 3 to store the sum
     int i;
 
@@ -46,8 +46,8 @@ int main ()
 	// Fill the code to ask the user to enters values for array2 
     // hint: 'for loop' similar to array1
     for(i = 0; i < MAX_ARRAY; i++){
-        cout << "PLease input element " << i << " for array2: ";
-        cin >> array1[i];
+        cout << "Please input element " << i << " for array2: ";
+        cin >> array2[i];
     }    
     // Fill the code to store the sum of array1 and array2 into array3 
     // hint: 'for loop' 
@@ -63,3 +63,4 @@ int main ()
     }
    return 0;
 }                                                
+
