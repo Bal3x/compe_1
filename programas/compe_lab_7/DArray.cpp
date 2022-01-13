@@ -51,7 +51,7 @@ int main ()
 			table[i][j] = value;		// Store value entered into the table
 			sum += value;				// Temporary sum of values entered					
 		}
-		table[i][COLS] = sum;			// Store sum into the third column
+		table[i][COLS - 1] = sum;			// Store sum into the third column
 	}
 
     // Fill the code to print out the table.
