@@ -16,6 +16,7 @@
 
 
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(){
@@ -28,8 +29,8 @@ int main(){
                                 {1, 2, 3, 4}, 
                                 {1, 2, 3, 4}, 
                                 {1, 2, 3, 4}};
-    double productSales;
-    int i, j;
+    // double productSales;
+    int i, j, tabs;
 
 // Codigo que evalua y suma los rows
     cout << "Sales" << endl; 
@@ -54,11 +55,15 @@ int main(){
         sales[rows - 1][i] = sum2;
     }
 // imprimir tabla
-   
+    for(i = 0; i < rows - 2; i++){
+        cout << setw(5) << "Sales Rep." << i + 1 << '\t';
+    }
+    cout << setw(25) << "Total Sales of product";
+    cout << endl;
+    
     for(i = 0; i < rows; i++){
 		for(j = 0; j < columns; j++){
 			cout << '\t' << sales[i][j] << '\t';
-
 		}
 		cout << endl;
 	}
