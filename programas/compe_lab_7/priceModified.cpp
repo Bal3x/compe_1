@@ -21,7 +21,7 @@
 //			Lowest price: 1.00
 
 
-// PLACE YOUR NAME HERE
+// Bryan Chavez
 
 #include <iostream>
 #include <iomanip>

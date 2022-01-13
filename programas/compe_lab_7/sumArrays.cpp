@@ -47,7 +47,7 @@ int main ()
     // hint: 'for loop' similar to array1
     for(i = 0; i < MAX_ARRAY; i++){
         cout << "PLease input element " << i << " for array2: ";
-        cin >> array1[i];
+        cin >> array2[i];
     }    
     // Fill the code to store the sum of array1 and array2 into array3 
     // hint: 'for loop' 
