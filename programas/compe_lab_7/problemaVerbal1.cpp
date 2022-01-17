@@ -31,7 +31,6 @@ int main(){
                                 {1, 2, 3, 4}};
     // double productSales;
     int i, j, tabs;
-
 // Codigo que evalua y suma los rows
     cout << "Sales" << endl; 
     for(i = 0; i < rows; i++){
@@ -67,7 +66,6 @@ int main(){
 		}
 		cout << endl;
 	}
-
     return 0;
 
 }
