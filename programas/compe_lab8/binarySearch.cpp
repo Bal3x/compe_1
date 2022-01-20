@@ -17,7 +17,7 @@
 // Input:  Enter an integer to search for: 19
 // Output: The value 19 is in position number 14 of the array
 
-//PLACE YOUR NAME HERE
+//Bryan Chavez
 
 #include<iostream>
 using namespace std;
