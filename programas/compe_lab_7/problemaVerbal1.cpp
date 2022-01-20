@@ -21,7 +21,7 @@ using namespace std;
 
 int main(){
     // variables
-     
+    
     const int rows = 6; //product
     const int columns = 5;  // salesperson
     int sales[rows][columns] = {{1, 2, 3, 4}, 
