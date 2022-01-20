@@ -18,7 +18,7 @@
 // Output: The letter z was not found in the list
 
 
-// Place Your Name Here
+// Bryan Chavez
 
 #include<iostream>
 using namespace std;
