@@ -30,12 +30,11 @@ int main()
 {
 	int found, value;
 	// Array to be search, in descending order
-	// int array[] = {34,19,19,18,17,13,12,12,12,11,9,5,3,2,2,0}; // Comment this line
+	int array[] = {34,19,19,18,17,13,12,12,12,11,9,5,3,2,2,0}; // Comment this line
 	// Array to be search, ascending order
-	int array[] = {0,2,2,3,5,9,11,12,12,12,13,17,18,19,19,34,35}; // Uncomment this line
-	// int array[] = {34,19,19,1,2,4,57,8,6,4,3,2,1,32,21,34}; 
+	// int array[] = {0,2,2,3,5,9,11,12,12,12,13,17,18,19,19,34,35}; // Uncomment this line
 	
-	cout << "Enter an integer to search for: ";
+	cout << "Enter an integer to search for and lets see if I can find it: ";
 	cin >> value;
 
 	found = binarySearch(array, SIZE, value); //function call to perform the binary search
@@ -47,7 +46,7 @@ int main()
 		cout << "The value " << value << " is in position number "
 		     << found + 1 << " of the array" << endl; 
 	}
-	cout << "Numero de loops = " << counter << endl;
+	cout << "Number of loops = " << counter << endl;
 	return 0;
 }
 
@@ -77,7 +76,7 @@ int binarySearch(int array[],int numElems,int number)
 		if (array[middle] == number)
 			return middle;			// If value is in the middle, we are done
 	                                 
-		else if (array[middle] > number)
+		else if (array[middle] < number)
 			last = middle - 1;		// Ignore second half of array and search the first 
 		
 		else // (array[middle] > number)

@@ -4,14 +4,15 @@ using namespace std;
 
 int main()
 {
-    int array[10];	
+	const int as = 10; 
+	int array[as];	
     
-    for(int i = 0; i < 10; i++) {
+    for(int i = 0; i < as; i++) {
 		array[i] = i * 2;
 	}
 	
-	for(int i = 0; i < 10; i++) {
-		cout << "index: " << i << " has value: " << array[i] << endl;
+	for(int i = 0; i < as; i++) {
+		cout << "index: " << i << " has value: " << array[i] << endl; 
 	}
 
 	return 0;
