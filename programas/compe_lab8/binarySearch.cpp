@@ -50,8 +50,6 @@ int main()
 	cout << "Numero de loops = " << counter << endl;
 	return 0;
 }
-
-
 //*******************************************************************
 //                     binarySearch
 //

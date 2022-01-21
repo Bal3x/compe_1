@@ -23,10 +23,11 @@
 
 // The values after the bubble sort is performed are: 11  9  5  2  0  
 
+// Bryan Chavez
+
 #include<iostream>
 using namespace std;
 
-// PLACE NAME HERE
 int bubbleCounter = 0;
 // Function prototypes
 void bubbleSortArray(int[], int);
@@ -73,7 +74,7 @@ do
 		swap = false;
 		for (int count = 0; count < bottom; count++)
 		{   bubbleCounter ++;
-			if (array[count] > array[count+1])		// swap to "<"" to have the result in accending order
+			if (array[count] < array[count+1])		// swap to "<"" to have the result in accending order
 			{  // The next three lines swap the two elements
 			   temp = array[count];  
 			   array[count] = array[count+1];
