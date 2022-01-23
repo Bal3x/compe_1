@@ -3,22 +3,18 @@
 
 #include <iostream>
 using namespace std;
+int numEmpleados();
 
 int main(){
 
-    int as = 0;
-    int horasTrabajadas[as];
+    int n = 0;
+    int horasTrabajadas[n];
     int sum = 0; 
     float promedio;
-    // solicitar al usuario el numero de empleados
-    cout << "Entre el numero de empleados: " << endl;
-    cin >> as;
-    while (as <= 0){
-        cout << "Numero invalido, intente nuevamente con un numero positivo.";
-        cin >> as;
-    }
+    // Funcion que solicite al usuario el numero de empleados
+    n = numEmpleados() ;
     // solicitar al usuario el numero de horas trabajadas 
-    for (int i = 0; i < as; i++){
+    for (int i = 0; i < n; i++){
         
         cout << "Entre el numero de horas trabajadas por empleado " << i + 1 << endl;
         cin >> horasTrabajadas[i];
@@ -29,14 +25,24 @@ int main(){
     //suma de las horas trabajadas
         sum += horasTrabajadas[i];
     // calcular el promedio de horas
-        promedio = sum / as;
+        promedio = sum / n;
     }
     // imprimir las horas entradas
-    for (int i = 0; i < as; i++){
+    for (int i = 0; i < n; i++){
             cout << "Las horas entradas para empleado " << i + 1 << " son: " << horasTrabajadas[i] << endl;
         }
-    // imprimir el promedio de horas de los empleafdos
-    cout << "El promedio de horas de los " << as << " empleados es " << promedio << endl;
+    // imprimir el promedio de horas de los empleados
+    cout << "El promedio de horas de los " << n << " empleados es " << promedio << endl;
 
     return 0;
+}
+int numEmpleados(){
+    int n;
+    cout << "Entre el numero de empleados: " << endl;
+    cin >> n;
+    while (n <= 0){
+        cout << "Numero invalido, intente nuevamente con un numero positivo.";
+        cin >> n;
+    }
+    return n;
 }
