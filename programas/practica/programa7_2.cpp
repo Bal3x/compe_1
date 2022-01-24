@@ -4,33 +4,20 @@
 #include <iostream>
 using namespace std;
 int numEmpleados();
+void solicitarHoras(int [], const int);
+float promedioHoras(const int [], const int);
 
 int main(){
 
     int n = 0;
-    int horasTrabajadas[n];
-    int sum = 0; 
-    float promedio;
+    int horasTrabajadas[n] = {0};
+    float promedio = 0.0;
     // Funcion que solicite al usuario el numero de empleados
     n = numEmpleados() ;
     // solicitar al usuario el numero de horas trabajadas 
-    for (int i = 0; i < n; i++){
-        
-        cout << "Entre el numero de horas trabajadas por empleado " << i + 1 << endl;
-        cin >> horasTrabajadas[i];
-        while(horasTrabajadas[i] < 0){
-            cout << "Numero invalido, intente nuevamente con un numero positivo." << endl;
-            cin >> horasTrabajadas[i];
-        }
-    //suma de las horas trabajadas
-        sum += horasTrabajadas[i];
-    // calcular el promedio de horas
-        promedio = sum / n;
-    }
-    // imprimir las horas entradas
-    for (int i = 0; i < n; i++){
-            cout << "Las horas entradas para empleado " << i + 1 << " son: " << horasTrabajadas[i] << endl;
-        }
+    solicitarHoras(horasTrabajadas, n);
+    // funcion que calcula el promedio de las horas trabajadas
+    promedio = promedioHoras(horasTrabajadas, n);
     // imprimir el promedio de horas de los empleados
     cout << "El promedio de horas de los " << n << " empleados es " << promedio << endl;
 
@@ -45,4 +32,21 @@ int numEmpleados(){
         cin >> n;
     }
     return n;
+}
+void solicitarHoras(int a[], const int n){
+    for (int i = 0; i < n; i++){
+        cout << "Entre el numero de horas trabajadas por empleado " << i + 1 << endl;
+        cin >> a[i];
+        while(a[i] < 0){
+            cout << "Numero invalido, intente nuevamente con un numero positivo." << endl;
+            cin >> a[i];
+        }
+    }
+}
+float promedioHoras(const int a[], const int n){
+    int sum = 0;
+    for (int i = 0; i < n; i++){
+        sum += a[i];
+    }
+    return sum / n;
 }
