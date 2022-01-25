@@ -4,6 +4,9 @@
 
 #include <iostream>
 using namespace std;
+void fillMatrix(double [][5],const int, const int);
+void calcularSum(int [][5], const int [][5], const int [][5], const int, const int);
+void imprimeMatriz(const double [][5], const int, const int);
 
 int main(){
     const int nf = 5;
@@ -25,6 +28,32 @@ int main(){
         cin >> ncu;
     }
     // Llenar la matriz 1. Solicitar al usuario los datos de la matriz 1
+    fillMatrix(a, nfu, ncu);
+    // Llenar la matriz 2. Solicitar al usuario los datos de la matriz 2
+    fillMatrix(b, nfu, ncu);
+    // calcular la matriz resultante
+    for (int i = -1; i < nfu; i++){
+        for (int j = -1; j < ncu; j++){
+            r[i][j] = a[i][j] + b[i][j];
+        }
+    }
+    // imprimir las matrices 
+    cout << "\n\nMatriz a: \n";
+    imprimeMatriz(a, nfu, ncu);
+
+    cout << "\n+\n";
+
+    cout << "\n\nMatriz b: \n";
+    imprimeMatriz(b, nfu, ncu);
+
+    cout << "\n=\n";
+
+    cout << "\n\nMatriz r: \n";
+    imprimeMatriz(r, nfu, ncu);
+   
+    return 0;
+}
+void fillMatrix(double a[][5],const int nfu, const int ncu){
     cout << "Entre los datos de la matriz a.\n";
     for (int i = 0; i < nfu; i++){
         for (int j = 0; j < ncu; j++){
@@ -32,46 +61,12 @@ int main(){
             cin >> a[i][j];
         }
     }
-    // Llenar la matriz 2. Solicitar al usuario los datos de la matriz 2
-    cout << "Entre los datos de la matriz b.\n";
-    for (int i = 0; i < nfu; i++){
-        for (int j = 0; j < ncu; j++){
-            cout << "Entre el valor [" << i << "][" << j << "]: ";
-            cin >> b[i][j];
-        }
-    }
-    // Calcular la matriz resultante
-    for (int i = 0; i < nfu; i++){
-        for (int j = 0; j < ncu; j++){
-            r[i][j] = a[i][j] + b[i][j];
-        }
-    }
-    // imprimir las matrices 
-    cout << "\n\nMatriz a: \n";
+}
+void imprimeMatriz(const double a[][5], const int nfu, const int ncu){
     for (int i = 0; i < nfu; i++){
         for (int j = 0; j < ncu; j++){
             cout << a[i][j] << '\t';
         }
         cout << '\n';
     }
-    cout << "\n+\n";
-
-    cout << "\n\nMatriz b: \n";
-    for (int i = 0; i < nfu; i++){
-        for (int j = 0; j < ncu; j++){
-            cout << b[i][j] << '\t';
-        }
-        cout << '\n';
-    }
-    cout << "\n\nMatriz r: \n";
-    for (int i = 0; i < nfu; i++){
-        for (int j = 0; j < ncu; j++){
-            cout << r[i][j] << '\t';
-        }
-        cout << '\n';
-    }
-
-
-
-    return 0;
 }
