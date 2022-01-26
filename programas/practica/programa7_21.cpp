@@ -11,6 +11,7 @@ int main(){
     const int nc = 4;       //number of quarters
     double sales[nf][nc];
     double totalSales = 0;
+    double totalDiv;
 
     cout << "This program will calculate the totalSales of sales of all the company's divisions." << endl;
     //user enters sales data
@@ -51,12 +52,32 @@ int main(){
         cout << '\n';
     }
 
-    cout << "\nQuarter\tDivision\tDivision\tDivision\tAll Div";
+    // calculate the total for quarter in all divisions
+    
+    cout << "Total\t\t";
+    for(int i = 0; i < nf; i++){
+        int totalDiv = 0;
+        for(int j = 0; j < nc; j++){
+        totalDiv += sales[i][j];
+        }
+        cout << totalDiv << "\t\t";
+    }
+    cout << "\nFor Div";
+
+    // calculate qrt total
+    // cout << "All Div\nQrt Total";
+
+
+    cout << "\nQuarter\tDivision\tDivision\tDivision\tAll Div" << endl;
+    cout << "\t\t1\t\t2\t\t3\tQrt Total\n" ;
     for(int i = 0; i < nc; i++){
+        cout << '\t' << i + 1;
+        int qrtTotal = 0;
             for(int j = 0; j < nf; j++){
-               
+                cout << " $" << sales[i][j] << "\t\t";
+                qrtTotal += sales[i][j];
             }
-            cout << '\n';
+            cout << qrtTotal <<  '\n';
         }
 
     return 0;
