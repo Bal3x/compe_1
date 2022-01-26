@@ -46,12 +46,18 @@ int main(){
     for(int j =0; j < nc; j++){
         cout << '\t' << j + 1;
         for(int i = 0; i < nf; i++){
-            cout << "\t\t$" << sales[i][j];
+            cout << "\t$" << sales[i][j] << '\t';
         }
         cout << '\n';
     }
 
-
+    cout << "\nQuarter\tDivision\tDivision\tDivision\tAll Div";
+    for(int i = 0; i < nc; i++){
+            for(int j = 0; j < nf; j++){
+               
+            }
+            cout << '\n';
+        }
 
     return 0;
 }
