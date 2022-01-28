@@ -30,60 +30,47 @@ int main(){
             totalSales += sales[i][j];
         }
     }
-    cout << "The totalSales sales for the company are: $" << totalSales << endl;
+    // cout << "The totalSales sales for the company are: $" << totalSales << endl;
 
-    cout << "\n\nDivision\tQrt 1\tQrt 2\tQrt 3\tQrt4" << endl;
-    cout << "\t\tSales\tSales\tSales\tSales" << endl;
+    // cout << "\n\nDivision\tQrt 1\tQrt 2\tQrt 3\tQrt4" << endl;
+    // cout << "\t\tSales\tSales\tSales\tSales" << endl;
 
-    for(int i = 0; i < nf; i++){
-        cout << '\t' << i + 1;
-        for(int j = 0; j < nc; j++){
-            cout << "\t$" << sales[i][j];
-        }
-        cout << '\n';
-    }
+    // for(int i = 0; i < nf; i++){
+    //     cout << '\t' << i + 1;
+    //     for(int j = 0; j < nc; j++){
+    //         cout << "\t$" << sales[i][j];
+    //     }
+    //     cout << '\n';
+    // }
 
-    // modify program to have it print quarters and divisions invert the above
-    cout << "\nQuarter\t\tDivision 1\tDivision 2\tDivision 3" << endl;
-    for(int j =0; j < nc; j++){
-        cout << '\t' << j + 1;
-        for(int i = 0; i < nf; i++){
-            cout << "\t$" << sales[i][j] << '\t';
-        }
-        cout << '\n';
-    }
+    // // modify program to have it print quarters and divisions invert the above
+    // cout << "\nQuarter\t\tDivision 1\tDivision 2\tDivision 3" << endl;
+    // for(int j =0; j < nc; j++){
+    //     cout << '\t' << j + 1;
+    //     for(int i = 0; i < nf; i++){
+    //         cout << "\t$" << sales[i][j] << '\t';
+    //     }
+    //     cout << '\n';
+    // }
 
     // calculate the total for quarter in all divisions
-    
-    cout << "Total\t\t";
-    for(int i = 0; i < nf; i++){
-        int totalDiv = 0;
-        for(int j = 0; j < nc; j++){
-        totalDiv += sales[i][j];
-        }
-        cout << totalDiv << "\t\t";
-    }
-    cout << "\nFor Div";
-
-    // calculate qrt total
-    // cout << "All Div\nQrt Total";
 
 
     cout << "\nQuarter\tDivision \tDivision \tDivision \tAll Div" << endl;
     cout << "\t\t1\t\t2\t\t3\tQrt Total\n" ;
-    for(int i = 0; i < nc; i++){
-        cout << '\t' << i + 1;
+    totalDiv = 0;
+    for(int j = 0; j < nc; j++){
+        cout << '\t' << j + 1;
         qrtTotal = 0;
         totalDiv = 0;
-        for(int j = 0; j < nf; j++){
+        for(int i = 0; i < nf; i++){
             cout << " $" << sales[i][j] << "\t\t";
             totalDiv += sales[i][j];
-            qrtTotal += sales[j][i];
+            qrtTotal += sales[i][j];
         }
-        cout << "\t" << qrtTotal <<  '\n';
+        cout << qrtTotal <<  '\n';
     }
-    cout << "Total\t\t" << totalDiv << '\t' ;
-
+    cout << "Total\t\t" << totalDiv << '\t';
 
     return 0;
 }
