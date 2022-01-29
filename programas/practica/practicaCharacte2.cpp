@@ -8,6 +8,7 @@ using namespace std;
 int strlen(char []);
 void copystr(char [], const char []);
 void strcat(char [], const char []);
+void invertStr(char []);
 
 int main(){
     const int as = 20;
@@ -22,6 +23,7 @@ int main(){
     strcat(ares, " ");
     strcat(ares, arr2);
     cout << ares;
+    invertStr(ares);
 
     return 0; 
 }
@@ -45,4 +47,13 @@ void strcat(char arr[], const char a[]){
         arr[i++] = a[j];
     }
     arr[i] = '\0';
+}
+void invertStr(char arr[]){
+    int i; 
+    i = strlen(arr);
+
+    for(int j = i; j < 0; j--){
+        arr[i--] = arr[j];
+        cout <<  arr[j];
+    }
 }

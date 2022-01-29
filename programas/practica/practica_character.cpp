@@ -30,7 +30,7 @@ int main(){
 }
 void mystrcopy(char res[], const char a[]){
     int i;
-    for(i = 0; a[i] != '\0'; i = i = i + 1){
+    for(i = 0; a[i] != '\0'; i = i + 1){
         res[i] = a[i];
     }
     res[i] = '\0';
