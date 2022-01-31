@@ -1,11 +1,11 @@
 // This program demonstrates the use of dynamic variables
+
 // Bryan Chavez
  
 #include <iostream>
 using namespace std;
  
 const int MAXNAME = 10;
- 
  
 
 int main(){
@@ -33,10 +33,12 @@ int main(){
     for (pos = 0; pos < MAXNAME; pos++)
     
     cin >> *(name + pos);                    // Fill in code to read a character into the name array
+    // cin >> name[pos];
                                             // WITHOUT USING a bracketed subscript *()
     cout << "Hi ";
     for (pos = 0; pos < MAXNAME; pos++)
         cout << *(name + pos);                   // Fill in code to a print a character from the name array
+        // cout << name[pos];
                                                 // WITHOUT USING a bracketed subscript
     
     cout << endl << "Enter three integer numbers separated by blanks" << endl;
@@ -45,9 +47,7 @@ int main(){
     // dynamic variables pointed to by pointers one, two, and three.
     // You are working only with pointer variables
     
-    cout << "Enter three numbers. " << endl;
     cin >> *one >> *two >> *three;
-
 
     //echo print
     cout << "The three numbers are " << endl;
