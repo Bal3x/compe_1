@@ -1,7 +1,7 @@
 // This program shows how the toupper and tolower functions can be
 // applied in a C++ program
  
-// PLACE YOUR NAME HERE
+// Bryan Chavez 
  
 #include <iostream>
 #include <cctype>
@@ -31,8 +31,8 @@ int main()
     << "another month?";
     cout << endl << "Enter Y or N" << endl;
     cin >> choice;
-   
-  } while (tolower(choice) == 'Y');
+
+    } while (toupper(choice) == 'Y');
  
  
 return 0;

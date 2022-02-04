@@ -14,24 +14,29 @@ using namespace std;
 bool testPassWord(char[]);
 int countLetters(char*);
 int countDigits(char*);
+bool checkUpper(char []);
+
+
 int main(){
 char passWord[20];
  
-cout << "Enter a password consisting of exactly 5 "
-<< "letters and 3 digits:" << endl;
+cout << "Enter a password consisting of exactly 4 "
+<< "letters and 6 digits:" << endl;
 cin.getline(passWord,20);
  
-if (testPassWord(passWord))
 cout << "Please wait - your password is being verified" << endl;
+
+if (testPassWord(passWord) && checkUpper(passWord))
+  cout << "Password is valid." << endl;
 else{
-    cout << "Invalid password. Please enter a password "
-    << "with exactly 5 letters and 3 digits" << endl;
-    cout << "For example, my37RuN9 is valid" << endl;
+  cout << "Invalid password. Please enter a password " << "with exactly 4 letters and 6 digits" << endl;
+  cout << "For example, my37RuN9 is valid" << endl;
   }
- 
 // Fill in the code that will call countLetters and
 // countDigits and will print to the screen both the number of
 // letters and digits contained in the password.
+cout << "The number of letters in your password are: " << countLetters(passWord) << endl;
+cout << "The number of digits in your password are: " << countDigits(passWord) << endl;
 
   return 0;
 }
@@ -55,7 +60,7 @@ bool testPassWord(char custPass[])
     length = strlen(custPass);
     numLetters = countLetters(custPass);
     numDigits = countDigits(custPass);
-    if (numLetters == 5 && numDigits == 3 && length == 8 )
+    if (numLetters == 4 && numDigits == 6 && length == 10 )
         return true;
     else
         return false;
@@ -101,4 +106,15 @@ int countDigits(char *strPtr){
 }
   return occurs;
  
+}
+bool checkUpper(char arr[]){
+  int n = 0;
+  while(arr[n] != '\0'){
+    if(isupper(arr[n])){
+      cout << "Only lower case letters are allowed\n";
+      return false;
+    }
+    n++;
+  }
+  return true;
 }
