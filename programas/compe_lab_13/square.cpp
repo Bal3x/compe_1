@@ -2,9 +2,18 @@
 // the perimeter and area of the square
  
 #include <iostream>
-#include "Square.h"
 using namespace std;
- 
+
+// square.h
+class Square{
+    public: 
+        void setSide(float length);
+        float findArea();
+        float findPerimeter();
+    private:
+        float side;
+
+}; 
  
   int main(){
     Square box; // box is defined as an object of the Square class
@@ -30,5 +39,41 @@ using namespace std;
     cout << "The Perimeter of the box is " << box.findPerimeter() << endl;
 
   return 0;
+}
+
+//Implementation section Member function implementation
+ 
+//**************************************************
+// setSide
+//
+// task: This procedure takes the length of a side and
+// places it in the appropriate member data
+// data in: length of a side
+//***************************************************
+ 
+void Square::setSide(float length){
+    side = length;
+}
+//**************************************************
+// findArea
+//
+// task: This finds the area of a square
+// data in: none (uses value of data member side)
+// data returned: area of square
+//***************************************************
+ 
+float Square::findArea(){
+    return side * side;
+}
+//**************************************************
+// findPerimeter
+//
+// task: This finds the perimeter of a square
+// data in: none (uses value of data member side)
+// data returned: perimeter of square
+//***************************************************
+float Square::findPerimeter(){
+    return 4 * side;
+ 
 }
 
