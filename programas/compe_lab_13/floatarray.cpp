@@ -12,70 +12,20 @@
 
 using namespace std;
  
-const int MAX_LENGTH = 50; // MAX_LENGTH contains the maximum length of our list
-class FloatList     // Declares a class that contains an array of
-                    // floating point numbers
-{
-public:
-    void getList(ifstream&);    // Member function that gets data from a file
-    void printList() const;    // Member function that prints data from that
-                              // file to the screen.
-    FloatList();             // constructor that sets length to 0.
-    ~FloatList();           // destructor
-    
-private:
-    int length;                         // Holds the number of elements in the array
-    float values[MAX_LENGTH];         // The array of values
- 
+const int MAX_LENGTH = 50;
+class FloatList{
+    public: 
+        void getList(ifstream&);
+        void printList() const;
+
+        FloatList();
+        ~FloatList();
+    private:
+        int length;                 //holds the number of elements in the array
+        float values[MAX_LENGTH];   // the array of values
+
 };
-typedef FloatList list[MAX_LENGTH];
- 
-int main()
-{
-ifstream tempData; // Defines a data file
-int listLength;
- 
-// Fill in the code to define an object called list of the class FloatList
-FloatList list[MAX_LENGTH];
+int main(){
+    ifstream tempData;
+// Fill in the code to define an object called list of the class Floatlist
 
-cout << fixed << showpoint;
-cout << setprecision(2);
- 
-tempData.open("temperatures.txt");
-if (!tempData){
-  cout << " Error opening file. It may not exist were indicated." << endl; 
-  return 1;
-}
- 
-// Fill in the code that calls the getList function.
-list->getList(tempData, list, listLength);
-// Fill in the code that calls the printList function.
-list->printList();
- 
-  return 0;
-}
-FloatList::FloatList()
-{
-// Fill in the code to complete this constructor that
-// sets the private data member length to 0
-length = 0;
-}
-// Fill in the entire code for the getList function
-// The getList function reads the data values from a data file
-// into the values array of the class FloatList
-void getList(ifstream& tempData, list temp, int& length){
-  int length = 0;
-  tempData >> temp[length];
-  while(tempData){
-    
-  }
-
-  
-
-}
- 
-// Fill in the entire code for the printList function
-// The printList function prints to the screen the data in
-// the values array of the class FloatList
- 
-// Fill in the code for the implementation of the destructor
