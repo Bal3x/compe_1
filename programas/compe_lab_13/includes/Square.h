@@ -6,6 +6,8 @@ class Square{
         void setSide(float length);
         float findArea();
         float findPerimeter();
+        Square();
+        ~Square();
     private:
         float side;
 

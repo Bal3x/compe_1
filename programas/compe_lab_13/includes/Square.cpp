@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Square.h"
 
 using namespace std;
 
@@ -39,9 +40,6 @@ float Square::findPerimeter(){
 }
 Square::Square(){
     side = 1;
-}
-Square::Square(float lenght){
-    side = lenght;
 }
 Square::~Square(){
     cout << "The destructor has been invoked." << endl;
