@@ -6,6 +6,7 @@
   <Project Name="buscar_valor_abs3" Path="buscar_valor_abs3/buscar_valor_abs3.project" Active="No"/>
   <Project Name="compe_lab5" Path="compe_lab5/compe_lab5.project" Active="No"/>
   <Project Name="radioCirculo" Path="radioCirculo/radioCirculo.project" Active="Yes"/>
+  <Project Name="testProject" Path="testProject/testProject.project"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -15,6 +16,7 @@
       <Project Name="buscar_valor_abs3" ConfigName="Debug"/>
       <Project Name="compe_lab5" ConfigName="Debug"/>
       <Project Name="radioCirculo" ConfigName="Debug"/>
+      <Project Name="testProject" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -24,6 +26,7 @@
       <Project Name="buscar_valor_abs3" ConfigName="Release"/>
       <Project Name="compe_lab5" ConfigName="Release"/>
       <Project Name="radioCirculo" ConfigName="Release"/>
+      <Project Name="testProject" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
