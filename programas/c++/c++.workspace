@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="c++" Database="" Version="10000">
-  <Project Name="DefaultConstructor" Path="DefaultConstructor/DefaultConstructor.project" Active="Yes"/>
+  <Project Name="DefaultConstructor" Path="DefaultConstructor/DefaultConstructor.project" Active="No"/>
+  <Project Name="OverLoadedConstructors" Path="OverLoadedConstructors/OverLoadedConstructors.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
       <Project Name="DefaultConstructor" ConfigName="Debug"/>
+      <Project Name="OverLoadedConstructors" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
       <Project Name="DefaultConstructor" ConfigName="Release"/>
+      <Project Name="OverLoadedConstructors" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
